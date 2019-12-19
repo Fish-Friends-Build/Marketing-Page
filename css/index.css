@@ -132,3 +132,84 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  font-family: Arial;
+  font-size: 1.5em;
+}
+.content {
+  border-radius: 5px;
+  color: #f1f1f1;
+  width: 100%;
+}
+.map {
+  border-radius: 5px;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  align-items: center;
+  width: fit-content;
+}
+.nav-wrapper {
+  border-radius: 5px;
+  height: 160px;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  text-align: center;
+}
+.nav-wrapper img {
+  width: 80px;
+  margin: 0 10px 10px 10px ;
+  opacity: 0.6;
+  filter: alpha(opacity=40);
+  border-radius: 20px;
+}
+.nav-wrapper nav a {
+  border-radius: 5px;
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: rgba(0, 0, 0, 0.486);
+  color: rgba(253, 253, 253, 0.541);
+  cursor: pointer;
+  text-decoration: none;
+}
+.nav-wrapper nav a:hover {
+  background: rgba(0, 0, 0, 0.747);
+  text-decoration: none;
+  color: #f3f3f5;
+}
+.nav-wrapper nav a:active {
+  background: rgba(0, 0, 0, 0.747);
+  text-decoration: none;
+  color: rgba(255, 0, 0, 0.514);
+}
+#myVideo {
+  position: fixed;
+  left: 0;
+  top: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  z-index: -1;
+}
+#myVideo #myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+#myVideo #myBtn:hover {
+  background: #ddd;
+  color: black;
+}
