@@ -12,6 +12,38 @@
         <![endif]-->
     </head>
     <body>
-        <i class="fas fa-share-alt"></i>
+       
+<video autoplay muted loop id="myVideo">
+    <source src="https://novus.one/vid/bg-vid.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  
+  <section class="content">
+    <div class="nav-wrapper">
+    <nav>
+      <a href="">Link 1</a>
+      <a href="">Link 2</a>
+      <a href="">Link 3</a>
+      <a href="">Link 4</a>
+      
+    </nav>
+    </div>
+  </section>
+  <section class="map"><iframe width="500" height="500"  src="https://maps.google.com/maps?q=san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></section>
+  <script>
+  var video = document.getElementById("myVideo");
+  var btn = document.getElementById("myBtn");
+  
+  function myFunction() {
+    if (video.paused) {
+      video.play();
+      btn.innerHTML = "Pause";
+    } else {
+      video.pause();
+      btn.innerHTML = "Play";
+    }
+  }
+  </script>
+  
     </body>
 </html>
