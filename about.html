@@ -1,17 +1,53 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <title>About | FishFriends</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-        <link href="css/index.css" rel="stylesheet">
-        <link href="css/animate.css" rel="stylesheet">
-        <!--[if lt IE 9]>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-        <![endif]-->
-    </head>
-    <body>
-        <i class="fas fa-share-alt"></i>
-    </body>
+
+    </body><!doctype html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+            <title>Features | FishFriends</title>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+            <link href="css/index.css" rel="stylesheet">
+            <link href="css/animate.css" rel="stylesheet">
+            <!--[if lt IE 9]>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <![endif]-->
+        </head>
+        <body>
+           
+    <video autoplay muted loop id="myVideo">
+        <source src="https://novus.one/vid/bg-vid.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      
+      <section class="content">
+        <div class="nav-wrapper">
+            <img src="/img/FishFriends-Logo.png">
+        <nav>
+          
+          <a href="/index.html">Home</a>
+          <a href="/features.html">Features</a>
+          <a href="/members.html">Log in</a>
+          <a href="/about.html">About us</a>
+          
+        </nav>
+        </div>
+      </section>
+      
+      <script>
+      var video = document.getElementById("myVideo");
+      var btn = document.getElementById("myBtn");
+      
+      function myFunction() {
+        if (video.paused) {
+          video.play();
+          btn.innerHTML = "Pause";
+        } else {
+          video.pause();
+          btn.innerHTML = "Play";
+        }
+      }
+      </script>
+      
+        </body>
+    </html>
 </html>

@@ -158,11 +158,18 @@ body {
 }
 .nav-wrapper {
   border-radius: 5px;
-  height: 60px;
+  height: 160px;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.3);
   padding: 20px;
   text-align: center;
+}
+.nav-wrapper img {
+  width: 80px;
+  margin: 0 10px 10px 10px ;
+  opacity: 0.6;
+  filter: alpha(opacity=40);
+  border-radius: 20px;
 }
 .nav-wrapper nav a {
   border-radius: 5px;
