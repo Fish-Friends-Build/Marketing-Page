@@ -1,5 +1,5 @@
 # Marketing-Page
 
 ## Team
-Javier Gutierrez
-Jason Gromaski
+### Javier Gutierrez
+### Jason Gromaski
