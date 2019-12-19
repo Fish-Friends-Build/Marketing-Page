@@ -1,5 +1,9 @@
-# Marketing-Page
+# FishFriends Marketing Page
 
-## Team
-### Javier Gutierrez
-### Jason Gromaski
+This is the official README.md file for the FishFriends Marketing Page.
+
+
+# The Team
+
+ - Jason Gromaski
+ - Javier Gutierrez
