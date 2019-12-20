@@ -4,6 +4,15 @@
 /*- Off White -*/
 /*- Almost Black -*/
 /*- Almost Black -*/
+.logo {
+  width: 80px;
+  margin: 0 10px 10px 10px;
+  opacity: 0.6;
+  filter: alpha(opacity=40);
+  border-radius: 20px;
+  animation-name: jello;
+  animation-duration: 5s;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -135,28 +144,61 @@ table {
 * {
   box-sizing: border-box;
 }
-body {
+@media (max-width: 500px), (max-width: 800px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: bolder;
+  }
+}
+body .content {
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 0;
-  font-family: Arial;
-  font-size: 1.5em;
 }
-.content {
+body .recent-feed {
+  display: flex;
+  flex-direction: column;
   border-radius: 5px;
-  color: #f1f1f1;
-  width: 100%;
-}
-.map {
-  border-radius: 5px;
-  margin: 10px;
   background-color: rgba(0, 0, 0, 0.3);
   padding: 20px;
+  margin: 10px;
   align-items: center;
   width: fit-content;
 }
-.nav-wrapper {
+body .recent-feed .text {
+  width: 300px;
+  padding: 20px;
+  margin: 10px;
+  color: rgba(253, 253, 253, 0.541);
+  font-size: 1em;
+  text-align: center;
+  font-weight: bold;
+}
+body .map {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin: 10px;
+  align-items: center;
+  width: fit-content;
+}
+body .map .text {
+  width: 300px;
+  padding: 20px;
+  margin: 10px;
+  color: rgba(253, 253, 253, 0.541);
+  font-size: 1em;
+  text-align: center;
+  font-weight: bold;
+}
+body .nav-wrapper {
   border-radius: 5px;
   height: 160px;
   width: 100vw;
@@ -164,14 +206,16 @@ body {
   padding: 20px;
   text-align: center;
 }
-.nav-wrapper img {
+body .nav-wrapper img {
   width: 80px;
-  margin: 0 10px 10px 10px ;
+  margin: 0 10px 10px 10px;
   opacity: 0.6;
   filter: alpha(opacity=40);
   border-radius: 20px;
+  animation-name: jello;
+  animation-duration: 5s;
 }
-.nav-wrapper nav a {
+body .nav-wrapper nav a {
   border-radius: 5px;
   width: 200px;
   font-size: 18px;
@@ -182,17 +226,17 @@ body {
   cursor: pointer;
   text-decoration: none;
 }
-.nav-wrapper nav a:hover {
+body .nav-wrapper nav a:hover {
   background: rgba(0, 0, 0, 0.747);
   text-decoration: none;
   color: #f3f3f5;
 }
-.nav-wrapper nav a:active {
+body .nav-wrapper nav a:active {
   background: rgba(0, 0, 0, 0.747);
   text-decoration: none;
   color: rgba(255, 0, 0, 0.514);
 }
-#myVideo {
+body #myVideo {
   position: fixed;
   left: 0;
   top: 0;
@@ -200,16 +244,24 @@ body {
   min-height: 100vh;
   z-index: -1;
 }
-#myVideo #myBtn {
+body #myVideo #myBtn {
+  border-radius: 5px;
   width: 200px;
   font-size: 18px;
   padding: 10px;
   border: none;
-  background: #000;
-  color: #fff;
+  background: rgba(0, 0, 0, 0.486);
+  color: rgba(253, 253, 253, 0.541);
   cursor: pointer;
+  text-decoration: none;
 }
-#myVideo #myBtn:hover {
-  background: #ddd;
-  color: black;
+body #myVideo #myBtn:hover {
+  background: rgba(0, 0, 0, 0.747);
+  text-decoration: none;
+  color: #f3f3f5;
+}
+body #myVideo #myBtn:active {
+  background: rgba(0, 0, 0, 0.747);
+  text-decoration: none;
+  color: rgba(255, 0, 0, 0.514);
 }

@@ -2,68 +2,45 @@
   box-sizing: border-box;
 }
 
-body {
-display: flex;
-flex-direction: column;
-align-items: center;    
-margin: 0;
-font-family: Arial;
-font-size: 1.5em;
+body { 
+
+  @media @phone,@tablet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.5em;
+  font-weight: bolder;
 }
 
 .content {
+    
   border-radius: 5px;
-  color: #f1f1f1;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
   
 }
-
+.recent-feed{
+    .boxes();
+}
 .map {
-border-radius:5px;
-margin:10px;
-background-color: rgba(0, 0, 0, 0.3);
-padding: 20px;
-align-items: center;
-width: fit-content;
+    .boxes();
 }
 .nav-wrapper {
   border-radius: 5px;
-  height:160px;
+  height: 160px;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.3);
   padding: 20px;
   text-align: center;
-img{
-    width:80px;
-    margin: 0 10px 10px 10px ;
-    opacity: 0.6;
-    filter: alpha(opacity=40);
-    border-radius: 20px;
-}
+  img {
+    .logo();
+  }
   nav a {
-    border-radius: 5px;
-    width: 200px;
-    font-size: 18px;
-    padding: 10px;
-    border: none;
-    background: rgba(0, 0, 0, 0.486);
-    color: rgba(253, 253, 253, 0.541);
-    cursor: pointer;
-    text-decoration: none;
-
-    &:hover {
-      background: rgba(0, 0, 0, 0.747);
-      text-decoration: none;
-      color: rgb(243, 243, 245);
-    }
-    &:active {
-      background: rgba(0, 0, 0, 0.747);
-      text-decoration: none;
-      color: rgba(255, 0, 0, 0.514);
-    }
+   .btns();
   }
 }
-
 
 #myVideo {
   position: fixed;
@@ -73,16 +50,7 @@ img{
   min-height: 100vh;
   z-index: -1;
   #myBtn {
-    width: 200px;
-    font-size: 18px;
-    padding: 10px;
-    border: none;
-    background: #000;
-    color: #fff;
-    cursor: pointer;
-    &:hover {
-      background: #ddd;
-      color: black;
-    }
+   .btns()
   }
+}
 }
