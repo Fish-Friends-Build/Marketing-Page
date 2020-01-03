@@ -142,7 +142,7 @@ table {
 * {
   box-sizing: border-box;
 }
-@media (max-width: 500px), (max-width: 800px) {
+@media (max-width: 500px), (max-width: 800px), (max-width: 3000px) {
   body {
     display: flex;
     flex-direction: column;
