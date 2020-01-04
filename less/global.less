@@ -13,19 +13,6 @@ body {
     font-size: 1.5em;
     font-weight: bolder;
 
-    .content {
-      border-radius: 5px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .recent-feed {
-      .boxes();
-    }
-    .map {
-      .boxes();
-      margin-top: 150px;
-    }
     .nav-wrapper {
       margin: 0;
       position: fixed;
@@ -41,6 +28,40 @@ body {
       nav a {
         .btns();
       }
+    }
+    .profile {
+      
+
+      .boxes();
+      display:flex;
+      margin-top: 150px;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      div{
+        padding:10px;
+        margin:20px;
+      }
+      
+    }
+    
+    .content {
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .recent-feed {
+      width: 500px;
+      .boxes();
+    }
+    .map {
+      
+     
+      .boxes();
+      width:100%;
+      margin-top: 150px;
     }
 
     #myVideo {
