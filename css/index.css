@@ -142,7 +142,7 @@ table {
 * {
   box-sizing: border-box;
 }
-@media (max-width: 500px), (max-width: 800px) {
+@media (max-width: 500px), (max-width: 800px), (max-width: 3000px) {
   body {
     display: flex;
     flex-direction: column;
@@ -150,51 +150,6 @@ table {
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
     font-size: 1.5em;
     font-weight: bolder;
-  }
-  body .content {
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  body .recent-feed {
-    display: flex;
-    flex-direction: column;
-    border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 20px;
-    margin: 10px;
-    align-items: center;
-    width: fit-content;
-  }
-  body .recent-feed .text {
-    width: 300px;
-    padding: 20px;
-    margin: 10px;
-    color: rgba(253, 253, 253, 0.541);
-    font-size: 1em;
-    text-align: center;
-    font-weight: bold;
-  }
-  body .map {
-    display: flex;
-    flex-direction: column;
-    border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 20px;
-    margin: 10px;
-    align-items: center;
-    width: fit-content;
-    margin-top: 150px;
-  }
-  body .map .text {
-    width: 300px;
-    padding: 20px;
-    margin: 10px;
-    color: rgba(253, 253, 253, 0.541);
-    font-size: 1em;
-    text-align: center;
-    font-weight: bold;
   }
   body .nav-wrapper {
     margin: 0;
@@ -233,6 +188,80 @@ table {
     background: rgba(0, 0, 0, 0.747);
     text-decoration: none;
     color: rgba(255, 0, 0, 0.514);
+  }
+  body .profile {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin: 10px;
+    width: fit-content;
+    color: rgba(253, 253, 253, 0.541);
+    margin-top: 150px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .profile .text {
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    color: rgba(253, 253, 253, 0.541);
+    font-size: 1em;
+    text-align: center;
+    font-weight: bold;
+  }
+  body .profile div {
+    padding: 10px;
+    margin: 20px;
+  }
+  body .content {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .recent-feed {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin: 10px;
+    align-items: center;
+    width: fit-content;
+    color: rgba(253, 253, 253, 0.541);
+  }
+  body .recent-feed .text {
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    color: rgba(253, 253, 253, 0.541);
+    font-size: 1em;
+    text-align: center;
+    font-weight: bold;
+  }
+  body .map {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin: 10px;
+    align-items: center;
+    width: fit-content;
+    color: rgba(253, 253, 253, 0.541);
+    width: 100%;
+    margin-top: 150px;
+  }
+  body .map .text {
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    color: rgba(253, 253, 253, 0.541);
+    font-size: 1em;
+    text-align: center;
+    font-weight: bold;
   }
   body #myVideo {
     position: fixed;
