@@ -159,6 +159,7 @@ table {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     text-align: center;
+    z-index: 1;
   }
   body .nav-wrapper img {
     width: 80px;
@@ -221,7 +222,6 @@ table {
     align-items: center;
   }
   body .recent-feed {
-    width: 500px;
     display: flex;
     flex-direction: column;
     border-radius: 5px;
@@ -251,7 +251,6 @@ table {
     align-items: center;
     width: fit-content;
     color: rgba(253, 253, 253, 0.541);
-    width: 100%;
     margin-top: 150px;
   }
   body .map .text {
