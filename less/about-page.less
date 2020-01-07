@@ -1,0 +1,43 @@
+.team-card {
+    border: thin solid @green;
+    padding: 20px;
+    border-top-right-radius: 5%;
+    border-top-left-radius: 5%;
+    background-color: rgba(255, 255, 255, .1);
+    width: 300px;
+    margin-right: 40px;
+    margin-top: 40px;
+    align-items: center;
+    text-align: center;
+
+    &:last-child {
+        margin-right: 0px;
+    }
+
+    .team-pic {
+        margin-bottom: 16px;
+
+        img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: thick solid @blue;
+        }
+    }
+
+    .team-info {
+
+        p {
+            margin-top: 16px;
+            
+            i {
+                color: darken(@green, 10%);
+                font-size: 2.5rem;
+
+                &:hover {
+                    color: lighten(@green, 10%);
+                }
+            }
+        }
+    }
+}
