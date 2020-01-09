@@ -279,6 +279,12 @@ h6 {
 .m-b-20 {
   margin-bottom: 20px;
 }
+.m-b-40 {
+  margin-bottom: 40px;
+}
+.m-l-16 {
+  margin-left: 16px;
+}
 .ali-c {
   align-items: center;
   align-content: center;
@@ -286,6 +292,9 @@ h6 {
 }
 .ali-txt-c {
   text-align: center;
+}
+.ali-txt-l {
+  text-align: left;
 }
 .spacer {
   margin: 50px 50px;
@@ -587,6 +596,39 @@ h6 {
   transition: 0.6s ease;
   user-select: none;
 }
+.promo-one {
+  width: calc(100vw - 30%);
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.promo-one .promo-pic {
+  height: 500px;
+  width: auto;
+  margin-right: 60px;
+}
+.promo-one .feature-list {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 4;
+}
+.promo-one .feature-list i {
+  margin-right: 20px;
+}
+.promo-one .feature-list #one {
+  color: #f11212;
+}
+.promo-one .feature-list #two {
+  color: #8dba20;
+}
+.promo-one .feature-list #three {
+  color: #EEEEEE;
+}
+.promo-one .feature-list #four {
+  color: #12a0f1;
+}
 .team-card {
   border: thin solid #8dba20;
   padding: 20px;
@@ -620,6 +662,109 @@ h6 {
 }
 .team-card .team-info p i:hover {
   color: #aadc31;
+}
+.profile-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.profile-wrapper .profile-side {
+  display: flex;
+  flex-direction: column;
+  min-width: 15%;
+  min-height: calc(100vh - 280px);
+  border-right: thick solid #333333;
+  padding-right: 20px;
+  margin-right: 20px;
+}
+@media (max-width: 500px) {
+  .profile-wrapper .profile-side {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .profile-wrapper .profile-side {
+    width: 100%;
+  }
+}
+.profile-wrapper .profile-side .profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: thick solid #12a0f1;
+}
+.profile-wrapper .profile-feed {
+  max-width: 80%;
+  max-height: calc(100vh - 280px);
+  min-height: calc(100vh - 280px);
+  margin-bottom: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.profile-wrapper .profile-feed .profile-status {
+  border-bottom: thin solid #12a0f1;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.profile-wrapper .profile-feed .profile-status input {
+  width: 85%;
+  height: 40px;
+  margin-right: 8px;
+  padding: 4px;
+}
+.profile-wrapper .profile-feed .profile-status button {
+  display: inline-block;
+  width: 100px !important;
+  height: 46px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.5;
+  color: #EEEEEE;
+  transition: all 0.15s ease-in-out;
+}
+.profile-wrapper .profile-feed .profile-status button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #8dba20;
+}
+.profile-wrapper .profile-feed .post-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 16px;
+  margin-bottom: 20px;
+}
+.profile-wrapper .profile-feed .post-container .profile-pic-sml {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: thin solid #12a0f1;
+}
+.profile-wrapper .profile-feed .post-container .username {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.profile-wrapper .profile-feed .post-container .col-content {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% + 32px);
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: -16px;
+  margin-right: -32px;
+  margin-top: 16px;
+}
+.profile-wrapper .profile-feed .post-container .col-content img {
+  width: 100%;
+  height: auto;
+}
+.profile-wrapper .profile-feed .post-container p {
+  padding: 16px 16px;
 }
 .btn {
   display: block;
