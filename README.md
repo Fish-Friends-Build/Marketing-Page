@@ -6,7 +6,7 @@
 
 ## Commits
 [![GitHub last commit](https://img.shields.io/github/last-commit/google/skia.svg?style=flat)]()
-[![GitHub commit activity the past week, 4 weeks](https://img.shields.io/github/commit-activity/d/Fish-Friends-Build/Marketing-Page)]()
+[![GitHub commit activity the past year](https://img.shields.io/github/commit-activity/y/Fish-Friends-Build/Marketing-Page)]()
 
 
 # FishFriends Marketing Page
