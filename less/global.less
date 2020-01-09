@@ -1,5 +1,6 @@
 *, ::after, ::before {
     box-sizing: border-box;
+    z-index: 0;
 }
 
 html {
@@ -84,6 +85,20 @@ a:focus {
     width: 100vw;
     min-height: 100vh;
     background-color: rgba(0, 0, 0, .7);
+}
+
+.mobnav {
+    @media @phone, @tablet {
+        border: 1px solid red;
+z-index: 1002;
+    }
+
+
+    @media @desktop {
+        display:none;
+        
+
+    }
 }
 
 #myVideo {
@@ -212,13 +227,12 @@ h6 {
         margin: 16px 0 16px 0;
     }
 
-    @media @tablet {
+    @media @phone,@tablet {
         width: 100vw;
+        margin-top:80px;
+
     }
 
-    @media @phone {
-        width: 100vw;
-    }
 
     .title {
         font-size: 2.2rem;

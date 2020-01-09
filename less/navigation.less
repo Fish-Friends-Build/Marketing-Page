@@ -1,4 +1,5 @@
 
+
 .nav-wrapper {
     display: flex;
     flex-direction: column;
@@ -20,13 +21,13 @@
         width: 30%;
     }
 
-    @media @tablet {
-        display: none;
+    @media @phone, @tablet {
+        display:none;
+
+
     }
 
-    @media @phone {
-        display: none;
-    }
+    
 
     .div-nav-logo {
         text-align: center;
@@ -35,8 +36,9 @@
         display: block;
         width: 100%;
 
-        @media @tablet {
-            margin-bottom: 60px;
+        @media @Phone,@tablet {
+            display:none;
+
         }
 
         h1 {
@@ -57,7 +59,7 @@
             letter-spacing: 2px;
             line-height: 1em;
 
-            @media @tablet {
+            @media @phone, @tablet {
                 font-size: 12px;
             }
         }
