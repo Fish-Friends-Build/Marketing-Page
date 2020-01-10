@@ -314,18 +314,24 @@ h6 {
   color: #EEEEEE;
   margin: 16px 0 16px 0;
 }
-@media (max-width: 800px) {
+@media (max-width: 500px), (max-width: 800px) {
   .div-content-wrapper {
     width: 100vw;
-  }
-}
-@media (max-width: 500px) {
-  .div-content-wrapper {
-    width: 100vw;
+    margin-top: 80px;
   }
 }
 .div-content-wrapper .title {
   font-size: 2.2rem;
+}
+@media (max-width: 500px), (max-width: 800px) {
+  .mobnav {
+    border: 1px solid red;
+  }
+}
+@media (max-width: 1200px) {
+  .mobnav {
+    display: none;
+  }
 }
 .nav-wrapper {
   display: flex;
@@ -349,12 +355,7 @@ h6 {
     width: 30%;
   }
 }
-@media (max-width: 800px) {
-  .nav-wrapper {
-    display: none;
-  }
-}
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   .nav-wrapper {
     display: none;
   }
