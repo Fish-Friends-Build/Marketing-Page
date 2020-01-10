@@ -135,6 +135,7 @@ table {
 ::after,
 ::before {
   box-sizing: border-box;
+  z-index: 0;
 }
 html {
   font-size: 62.5% !important;
@@ -286,8 +287,6 @@ h6 {
   margin-left: 16px;
 }
 .ali-c {
-  align-items: center;
-  align-content: center;
   justify-content: center;
 }
 .ali-txt-c {
@@ -302,6 +301,7 @@ h6 {
 .div-content-wrapper {
   display: flex;
   flex-direction: column;
+  flex: 0 auto;
   width: calc(100vw - 300px);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -322,16 +322,6 @@ h6 {
 }
 .div-content-wrapper .title {
   font-size: 2.2rem;
-}
-@media (max-width: 500px), (max-width: 800px) {
-  .mobnav {
-    border: 1px solid red;
-  }
-}
-@media (max-width: 1200px) {
-  .mobnav {
-    display: none;
-  }
 }
 .nav-wrapper {
   display: flex;
@@ -367,9 +357,9 @@ h6 {
   display: block;
   width: 100%;
 }
-@media (max-width: 800px) {
+@media (max-width: 500px), (max-width: 800px) {
   .nav-wrapper .div-nav-logo {
-    margin-bottom: 60px;
+    display: none;
   }
 }
 .nav-wrapper .div-nav-logo h1 {
@@ -390,7 +380,7 @@ h6 {
   letter-spacing: 2px;
   line-height: 1em;
 }
-@media (max-width: 800px) {
+@media (max-width: 500px), (max-width: 800px) {
   .nav-wrapper .div-nav-logo span {
     font-size: 12px;
   }
@@ -598,9 +588,9 @@ h6 {
   user-select: none;
 }
 .promo-one {
-  width: 100vw;
+  width: calc(100vw - 300px);
   height: auto;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 20px;
   margin-left: -20px;
   margin-bottom: 40px;
@@ -611,13 +601,19 @@ h6 {
   width: auto;
   margin-right: 60px;
 }
-.promo-one .feature-list {
-  font-size: 3rem;
-  font-weight: 700;
+.promo-one .feature-list li i {
+  margin: 0 20px 0 0;
   line-height: 4;
 }
-.promo-one .feature-list i {
-  margin-right: 20px;
+.promo-one .feature-list li span {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.promo-one .feature-list li p {
+  margin: 0 0 10px 40px;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.5;
 }
 .promo-one .feature-list #one {
   color: #f11212;
@@ -642,6 +638,9 @@ h6 {
   margin-top: 40px;
   align-items: center;
   text-align: center;
+}
+.team-card:hover {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .team-card:last-child {
   margin-right: 0px;
