@@ -1,0 +1,116 @@
+.profile-wrapper {
+    display: flex;
+    flex-direction: row;
+
+    .profile-side {
+        display: flex;
+        flex-direction: column;
+        min-width: 15%;
+        min-height: calc(100vh - 280px);
+        border-right: thick solid @dark;
+        padding-right: 20px;
+        margin-right: 20px;
+
+        @media @phone {
+            width: 100%;
+        }
+
+        @media @tablet {
+            width: 100%;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: thick solid @blue;
+        }
+    }
+
+    .profile-feed {
+        max-width: 80%;
+        max-height: calc(100vh - 280px);
+        min-height: calc(100vh - 280px;);
+        margin-bottom: 0;
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+        .profile-status {
+            border-bottom: thin solid @blue;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+
+
+            input {
+                width: 85%;
+                height: 40px;
+                margin-right: 8px;
+                padding: 4px;
+            }
+
+            button {
+                display: inline-block;
+                width: 100px !important;
+                height: 46px;
+                border: none;
+                border-radius: 5px;
+                background-color: rgba(255, 255, 255, 0.1);
+                font-size: 1.8rem;
+                font-weight: 700;
+                text-align: center;
+                line-height: 1.5;
+                color: @light;
+                transition: all 0.15s ease-in-out;
+            
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.2);
+                    color: @green;
+                }
+            }
+        }
+
+        .post-container {
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            width: 100%;
+            height: auto;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 16px;
+            margin-bottom: 20px;
+
+            .profile-pic-sml {
+                width: 42px;
+                height: 42px;
+                border-radius: 50%;
+                border: thin solid @blue;
+            }
+
+            .username {
+                font-size: 1.8rem;
+                font-weight: 700;
+            }
+
+            .col-content {
+                display: flex;
+                flex-direction: column;
+                width: calc(100% + 32px);
+                padding-left: 0;
+                padding-right: 0;
+                margin-left: -16px;
+                margin-right: -32px;
+                margin-top: 16px;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            p {
+                padding: 16px 16px;
+            }
+        }
+
+    }
+}
