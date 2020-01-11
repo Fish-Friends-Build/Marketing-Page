@@ -181,8 +181,6 @@ h6 {
 
 
 .ali-c {
-    align-items: center;
-    align-content: center;
     justify-content: center;
 }
 
@@ -202,6 +200,7 @@ h6 {
 .div-content-wrapper {
     display: flex;
     flex-direction: column;
+    flex: 0 auto;
     width: calc(100vw - 300px);
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
@@ -218,7 +217,7 @@ h6 {
 
     @media @phone,@tablet {
         width: 100vw;
-        margin-top:80px;
+        margin-top:80px; // the height of the mobile nav +20 px
 
     }
 
