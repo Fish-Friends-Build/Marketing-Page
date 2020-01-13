@@ -181,6 +181,8 @@ h6 {
 
 
 .ali-c {
+    align-content: center;
+    align-items: center;
     justify-content: center;
 }
 
@@ -206,18 +208,18 @@ h6 {
     -o-transition: 0.5s;
     transition: 0.5s;
     color: @light;
-    padding: 20px;
+    padding: 0 20px 0 20px;
     
 
     hr {
-        width: 95%;
+        width: 100%;
         color: @light;
         margin: 16px 0 16px 0;
     }
 
     @media @phone,@tablet {
         width: 100vw;
-        margin-top:80px; // the height of the mobile nav +20 px
+        padding-top: 0;
 
     }
 
